@@ -1,4 +1,4 @@
 # Digital-Electronics
-ECE334
+Collection of labs for ECE334 (Digital Electronics) course at University of Toronto for Winter 2023
 
 Lab 0: Introduction to Micromagic
