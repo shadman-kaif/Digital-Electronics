@@ -1,0 +1,6 @@
+# SUE version MMI_SUE5.6.29 (auto-save)
+
+proc SCHEMATIC_pulsegen {} {
+  make inverter -origin {440 420}
+}
+

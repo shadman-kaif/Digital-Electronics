@@ -1,0 +1,29 @@
+| units: 0.1  tech: sue  format: MIT
+| begin inverter -10 -10
+| device inverter.nmos 550 360
+n net_4 gnd net_1 240 1000
+| device inverter.pmos 550 200
+p net_4 vdd net_1 240 2000
+| end inverter
+| begin inverter_1 -110 -10
+| device inverter_1.nmos 550 360
+n net_2 gnd net_4 240 1000
+| device inverter_1.pmos 550 200
+p net_2 vdd net_4 240 2000
+| end inverter_1
+| begin inverter_2 90 -10
+| device inverter_2.nmos 550 360
+n net_1 gnd net_3 240 1000
+| device inverter_2.pmos 550 200
+p net_1 vdd net_3 240 2000
+| end inverter_2
+| begin nand2 210 -10
+| device nand2.pmos 0 -100
+p net_3 vdd uc_net_5 240 2000
+| device nand2.nmos 0 0
+n net_3 nand2.net_1 uc_net_5 240 2000
+| device nand2.pmos_1 160 -100
+p net_2 vdd uc_net_5 240 2000
+| device nand2.nmos_1 0 100
+n net_2 gnd nand2.net_1 240 2000
+| end nand2

@@ -1,0 +1,34 @@
+| units: 0.1  tech: mmi25  format: UCB
+A a input
+A b input
+A c input
+A cout output
+A sum output
+p a vdd #fet!-type!pfet!-width!8.0!-_version!1505925260_24870/s 240 8000 860 7980
+p b #fet!-type!pfet!-width!8.0!-_version!1505925260_24870/s vdd 240 8000 1840 7980
+p c vdd #fet!-type!pfet!-width!8.0!-_version!1505925260_24870/s 240 8000 2820 7980
+p #fet!-width!4.0!-_version!304263818_23685/s #fet!-type!pfet!-width!8.0!-_version!1505925260_24870/s wire_tmp_label85 240 8000 3800 7980
+p c wire_tmp_label85 #fet!-type!pfet!-contacts!left!-width!8.0!-_version!1301632113_24858/d 240 8000 4780 7980
+p b #fet!-type!pfet!-contacts!left!-width!8.0!-_version!1301632113_24858/d #fet!-type!pfet!-contacts!right!-width!8.0!-_version!232779055_24862/s 240 8000 5520 7980
+p a #fet!-type!pfet!-contacts!right!-width!8.0!-_version!232779055_24862/s vdd 240 8000 6260 7980
+p b vdd #fet!-type!pfet!-width!8.0!-_version!1505925260_24873/d 240 8000 7240 7980
+p a #fet!-type!pfet!-width!8.0!-_version!1505925260_24873/d vdd 240 8000 8220 7980
+p a vdd #fet!-type!pfet!-contacts!right!-width!8.0!-_version!232779055_24863/s 240 8000 9200 7980
+p b #fet!-type!pfet!-contacts!right!-width!8.0!-_version!232779055_24863/s #fet!-width!4.0!-_version!304263818_23685/s 240 8000 9940 7980
+p c #fet!-width!4.0!-_version!304263818_23685/s #fet!-type!pfet!-width!8.0!-_version!1505925260_24873/d 240 8000 10920 7980
+p wire_tmp_label85 sum vdd 240 8000 12880 7980
+p #fet!-width!4.0!-_version!304263818_23685/s vdd cout 240 8000 13860 7980
+n a gnd #fet!-width!4.0!-_version!304263818_23682/s 240 4000 860 1020
+n b #fet!-width!4.0!-_version!304263818_23682/s gnd 240 4000 1840 1020
+n c gnd #fet!-width!4.0!-_version!304263818_23682/s 240 4000 2820 1020
+n #fet!-width!4.0!-_version!304263818_23685/s #fet!-width!4.0!-_version!304263818_23682/s wire_tmp_label85 240 4000 3800 1020
+n c wire_tmp_label85 #fet!-contacts!left!-width!4.0!-_version!847173261_24882/d 240 4000 4780 1020
+n b #fet!-contacts!left!-width!4.0!-_version!847173261_24882/d #fet!-contacts!right!-width!4.0!-_version!503738920_24886/s 240 4000 5520 1020
+n a #fet!-contacts!right!-width!4.0!-_version!503738920_24886/s gnd 240 4000 6260 1020
+n b gnd #fet!-width!4.0!-_version!304263818_23685/d 240 4000 7240 1020
+n a #fet!-width!4.0!-_version!304263818_23685/d gnd 240 4000 8220 1020
+n a gnd #fet!-contacts!right!-width!4.0!-_version!503738920_24887/s 240 4000 9200 1020
+n b #fet!-contacts!right!-width!4.0!-_version!503738920_24887/s #fet!-width!4.0!-_version!304263818_23685/s 240 4000 9940 1020
+n c #fet!-width!4.0!-_version!304263818_23685/s #fet!-width!4.0!-_version!304263818_23685/d 240 4000 10920 1020
+n wire_tmp_label85 sum gnd 240 4000 12880 1020
+n #fet!-width!4.0!-_version!304263818_23685/s gnd cout 240 4000 13860 1020

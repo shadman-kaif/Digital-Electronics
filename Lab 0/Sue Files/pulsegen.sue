@@ -1,0 +1,52 @@
+# SUE version MMI_SUE5.6.29
+
+proc SCHEMATIC_pulsegen {} {
+  make inverter -origin {-10 -10}
+  make inverter -origin {-110 -10}
+  make inverter -origin {90 -10}
+  make nand2 -origin {210 -10}
+  make pulse -origin {-250 70}
+  make global -name gnd -origin {-250 160}
+  make input -name in -origin {-260 -80}
+  make output -name out0_H -origin {240 -80}
+  make output -name out1_H -origin {240 80}
+  make pulsegen -origin {50 270}
+  make title_bar -owner kaifmd -origin {20 470}
+  make_wire -250 -10 -140 -10
+  make_wire -60 -10 -40 -10
+  make_wire 40 -10 60 -10
+  make_wire 140 -10 160 -10
+  make_wire 160 -10 160 -30
+  make_wire 190 10 -250 10
+  make_wire -250 10 -250 -10
+  make_wire -250 10 -250 30
+  make_wire -250 110 -250 160
+  make_wire 280 -10 300 -10
+  make_wire 300 30 300 -10
+  make_wire 240 30 240 80
+  make_wire 240 30 300 30
+  make_wire -260 -80 -260 -10
+  make_wire -260 -10 -250 -10
+  make_wire 170 -30 160 -30
+  make_wire 170 -30 190 -30
+  make_wire 170 -80 240 -80
+  make_wire 170 -80 170 -30
+}
+
+proc ICON_pulsegen args {
+  icon_setup $args {{origin {0 0}} {orient R0} {BIkram {}} {Shadman {}} {no_name {}} {my_name Bikram}}
+  icon_term -type input -origin {-140 0} -name in
+  icon_term -type output -origin {140 -40} -name out0_H
+  icon_term -type output -origin {140 0} -name out1_H
+  icon_property -origin {-50 -40} -size large -anchor center -label pulsegen
+  icon_line -140 -60 140 -60 140 60 -140 60 -140 -60
+  icon_property -origin {-130 0} -label in
+  icon_property -origin {130 -40} -anchor e -label out0_H
+  icon_property -origin {130 0} -anchor e -label out1_H
+  icon_property -origin {-140 280} -type user -name BIkram
+  icon_property -origin {-140 300} -type user -name Shadman
+  icon_property -origin {-140 320} -type user -name no_name
+  icon_property -origin {-150 350} -type user -name my_name -default Bikram
+  icon_property -origin {-20 40} -label {I'm $my_name}
+}
+
