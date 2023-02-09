@@ -7,8 +7,8 @@ proc SCHEMATIC_lab1_p2b {} {
   make nmos -name Wn -W 2 -origin {350 330}
   make output -name V0 -origin {580 280}
   make pulse -name Vi -pulse_voltage 2.5 -rise_time 16ns -fall_time 16ns -period 100ns -origin {100 330}
-  make dc_supply -name Vdd -voltage 2.5V -origin {350 70}
   make global -name gnd -origin {470 20}
+  make dc_supply -orient RXY -name Vdd -voltage 2.5V -origin {350 70}
   make_wire 350 280 350 260
   make_wire 350 280 350 290
   make_wire 360 430 350 430
@@ -21,9 +21,9 @@ proc SCHEMATIC_lab1_p2b {} {
   make_wire 100 270 220 270
   make_wire 220 270 220 330
   make_wire 220 220 220 270
-  make_wire 350 100 350 180
   make_wire 580 280 350 280
-  make_wire 350 30 350 20
+  make_wire 350 40 350 20
   make_wire 350 20 470 20
+  make_wire 350 110 350 180
 }
 

@@ -1,0 +1,110 @@
+# SUE version MMI_SUE5.6.29
+
+proc SCHEMATIC_lab1_l3b {} {
+  make global -name gnd -origin {-410 550}
+  make global -name gnd -origin {270 450}
+  make output -name out -origin {590 260}
+  make input -name in -origin {-420 280}
+  make global -name gnd -origin {40 470}
+  make global -name gnd -origin {-90 470}
+  make global -name gnd -origin {-220 470}
+  make pmos -W 4 -origin {270 210}
+  make nmos -W 4 -origin {270 310}
+  make nmos -W 4 -origin {270 410}
+  make pmos -W 4 -origin {430 210}
+  make pulse -pulse_voltage 2.5 -origin {-410 450}
+  make global -name gnd -origin {120 390}
+  make pmos -W 4 -origin {-220 290}
+  make nmos -W 2 -origin {-220 400}
+  make nmos -W 2 -origin {-90 400}
+  make pmos -W 4 -origin {-90 290}
+  make pmos -W 4 -origin {40 290}
+  make nmos -W 2 -origin {40 410}
+  make global -orient RXY -name vdd -origin {270 20}
+  make global -orient RXY -name vdd -origin {430 20}
+  make capacitor -capacitance 1.5pF -origin {120 330}
+  make_wire -410 490 -410 550
+  make_wire -350 340 -350 290
+  make_wire -350 340 -350 400
+  make_wire -350 400 -280 400
+  make_wire -220 440 -220 470
+  make_wire -90 440 -90 470
+  make_wire 40 450 40 470
+  make_wire -350 290 -280 290
+  make_wire -220 350 -180 350
+  make_wire -220 350 -220 330
+  make_wire -220 350 -220 360
+  make_wire -180 290 -150 290
+  make_wire -180 290 -180 350
+  make_wire -180 350 -180 400
+  make_wire -180 400 -150 400
+  make_wire -90 340 -40 340
+  make_wire -40 340 -40 290
+  make_wire -40 290 -20 290
+  make_wire -90 340 -90 330
+  make_wire -90 340 -90 360
+  make_wire -40 340 -40 410
+  make_wire 270 250 270 260
+  make_wire 270 270 270 260
+  make_wire 270 260 430 260
+  make_wire 430 250 430 260
+  make_wire 270 350 270 370
+  make_wire 430 260 590 260
+  make_wire 370 210 370 660
+  make_wire -410 340 -410 410
+  make_wire -550 660 -550 340
+  make_wire -550 340 -410 340
+  make_wire -420 280 -380 280
+  make_wire -40 410 -20 410
+  make_wire -380 340 -380 280
+  make_wire -380 340 -410 340
+  make_wire -380 340 -350 340
+  make_wire 160 660 160 410
+  make_wire 160 410 210 410
+  make_wire 160 660 370 660
+  make_wire 160 660 -550 660
+  make_wire 40 350 90 350
+  make_wire 40 350 40 370
+  make_wire 40 350 40 330
+  make_wire 180 260 210 260
+  make_wire 210 260 210 210
+  make_wire 210 260 210 310
+  make_wire 90 300 120 300
+  make_wire 90 350 90 300
+  make_wire 180 260 180 300
+  make_wire 180 300 120 300
+  make_wire 120 390 120 360
+  make_wire 430 20 430 170
+  make_wire -220 250 -220 70
+  make_wire 270 70 270 20
+  make_wire 270 70 -220 70
+  make_wire -90 250 -90 130
+  make_wire 270 130 270 70
+  make_wire 270 130 -90 130
+  make_wire 270 150 40 150
+  make_wire 40 150 40 250
+  make_wire 270 150 270 130
+  make_wire 270 150 270 170
+}
+
+proc ICON_lab1_l3b args {
+  icon_setup $args {{origin {0 0}} {orient R0} {BIkram {}} {Shadman {}} {no_name {}} {my_name Bikram}}
+  icon_term -type input -origin {-140 0} -name in
+  icon_term -type output -origin {140 -40} -name out0_H
+  icon_term -type output -origin {140 0} -name out1_H
+  icon_term -type input -origin {0 0} -name In
+  icon_term -type input -origin {0 0} -name in0
+  icon_term -type input -origin {0 0} -name in1
+  icon_term -type output -origin {0 0} -name out
+  icon_property -origin {-50 -40} -size large -anchor center -label lab1_l3b
+  icon_line -140 -60 140 -60 140 60 -140 60 -140 -60
+  icon_property -origin {-130 0} -label in
+  icon_property -origin {130 -40} -anchor e -label out0_H
+  icon_property -origin {130 0} -anchor e -label out1_H
+  icon_property -origin {-140 280} -type user -name BIkram
+  icon_property -origin {-140 300} -type user -name Shadman
+  icon_property -origin {-140 320} -type user -name no_name
+  icon_property -origin {-150 350} -type user -name my_name -default Bikram
+  icon_property -origin {-20 40} -label {I'm $my_name}
+}
+
