@@ -1,0 +1,107 @@
+# SUE version MMI_SUE5.6.29
+
+proc SCHEMATIC_no_name {} {
+  make nor2 -origin {280 350}
+  make nor2 -origin {500 410}
+  make nor2 -origin {700 260}
+  make nor2 -origin {920 240}
+  make input -name SETQ -origin {20 120}
+  make input -name DATA -origin {-200 340}
+  make input -name RESETQ -origin {30 530}
+  make inverter -origin {930 410}
+  make output -name Q -origin {1090 170}
+  make output -name Q* -origin {1090 240}
+  make pulse -origin {-60 -60}
+  make xgate -name CL* -WP 9 -WN 3 -origin {-10 350}
+  make xgate -name CL -WP 9 -WN 3 -origin {310 470}
+  make xgate -name CL -WP 9 -WN 3 -origin {570 240}
+  make xgate -name CL* -WP 9 -WN 3 -origin {820 410}
+  make global -name GND -origin {-180 50}
+  make pulse -origin {-210 470}
+  make pulse -origin {100 680}
+  make global -name GND -origin {-230 560}
+  make global -name GND -origin {110 830}
+  make inverter -orient R270 -origin {-110 670}
+  make_wire 900 260 910 260
+  make_wire 830 120 830 220
+  make_wire 830 220 900 220
+  make_wire 800 260 800 170
+  make_wire 800 260 900 260
+  make_wire 800 260 770 260
+  make_wire 350 350 400 350
+  make_wire 400 350 400 390
+  make_wire 410 390 410 240
+  make_wire 410 390 400 390
+  make_wire 410 390 480 390
+  make_wire 630 530 630 280
+  make_wire 630 280 680 280
+  make_wire 450 530 450 430
+  make_wire 450 430 480 430
+  make_wire 450 530 630 530
+  make_wire 190 120 190 330
+  make_wire 190 330 260 330
+  make_wire 190 120 830 120
+  make_wire 160 350 160 370
+  make_wire 170 370 170 470
+  make_wire 170 470 280 470
+  make_wire 170 370 160 370
+  make_wire 170 370 260 370
+  make_wire 340 470 610 470
+  make_wire 610 470 610 410
+  make_wire 610 410 570 410
+  make_wire 540 240 410 240
+  make_wire 650 240 650 410
+  make_wire 650 410 790 410
+  make_wire 650 240 600 240
+  make_wire 650 240 680 240
+  make_wire 1010 240 990 240
+  make_wire 850 410 900 410
+  make_wire 980 410 1010 410
+  make_wire 1010 410 1010 240
+  make_wire 800 170 1090 170
+  make_wire 1010 240 1090 240
+  make_wire -180 50 -180 -20
+  make_wire -180 -20 -60 -20
+  make_wire -60 -100 -60 -180
+  make_wire -60 -180 100 -180
+  make_wire 100 -180 100 120
+  make_wire 100 120 190 120
+  make_wire 100 120 20 120
+  make_wire -40 340 -40 350
+  make_wire -210 510 -210 560
+  make_wire -210 560 -230 560
+  make_wire -210 380 -130 380
+  make_wire -130 380 -130 340
+  make_wire -130 340 -200 340
+  make_wire -130 340 -40 340
+  make_wire -210 430 -210 380
+  make_wire 100 720 100 810
+  make_wire 100 810 110 810
+  make_wire 110 810 110 830
+  make_wire 100 640 100 530
+  make_wire 100 530 450 530
+  make_wire 100 530 30 530
+  make_wire 160 350 20 350
+  make_wire -110 240 -10 240
+  make_wire -10 240 -10 320
+  make_wire -110 700 -110 890
+  make_wire -110 890 -330 890
+  make_wire -330 890 -330 -300
+  make_wire -330 -300 570 -300
+  make_wire 570 -300 570 210
+  make_wire -10 390 -10 440
+  make_wire -10 440 310 440
+  make_wire 310 440 760 440
+  make_wire 760 440 760 450
+  make_wire 760 450 820 450
+  make_wire 310 510 310 570
+  make_wire 310 570 -110 570
+  make_wire -110 570 -110 240
+  make_wire -110 570 -110 620
+  make_wire 570 280 570 380
+  make_wire 570 380 820 380
+  make_wire 570 380 390 380
+  make_wire 390 380 390 570
+  make_wire 390 570 310 570
+}
+

@@ -1,0 +1,9 @@
+# SUE version MMI_SUE5.6.29 (auto-save)
+
+proc SCHEMATIC_lab3_l3 {} {
+  make input -name SETQ -origin {-180 -210}
+  make input -name DATA -origin {-180 -150}
+  make input -name RESETQ -origin {-180 -80}
+  make nor2 -origin {0 -140}
+}
+

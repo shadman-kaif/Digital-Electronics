@@ -1,0 +1,10 @@
+set NETLIST_CACHE(lab3_l1,cells) {{icon pulse /cad2/mmi64_170116/sue/schematics/mspice/pulse.sue {}} {icon nmos /cad2/mmi64_170116/sue/schematics/mspice/nmos.sue {}} {icon capacitor /cad2/mmi64_170116/sue/schematics/mspice/capacitor.sue {}} {icon pmos /cad2/mmi64_170116/sue/schematics/mspice/pmos.sue {}} {icon dc_supply /cad2/mmi64_170116/sue/schematics/mspice/dc_supply.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(lab3_l1,level) main
+set NETLIST_CACHE(lab3_l1,globals) gnd
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(lab3_l1,version) MMI_SUE5.6.29
+set NETLIST_CACHE(lab3_l1) {{* start main CELL lab3_l1} {* .SUBCKT lab3_l1 Vi Vo } {C_1 GND Vo 0.3pF } {VVdd net_1 GND DC 2.5V } {M_1 Vo Vi net_1 vdd p W='1.5*1u' L=lp_min ad='areap(1.5,sdd)' } {+ as='areap(1.5,sdd)' pd='perip(1.5,sdd)' ps='perip(1.5,sdd)' } {M_2 Vo Vi GND gnd n W='0.5*1u' L=ln_min ad='arean(0.5,sdd)' } {+ as='arean(0.5,sdd)' pd='perin(0.5,sdd)' ps='perin(0.5,sdd)' } {V_1 Vi GND pulse 0 vddp 0ns 200ps 200ps 6ns 12ns } {* .ENDS	$ lab3_l1} {}}
+set NETLIST_CACHE(lab3_l1,names) {{-60 -350 {1 GND}} {-20 -220 {0 net_1}} {-20 -140 {0 Vo}} {210 -110 {1 Vo}} {120 0 {0 C_1}} {120 100 {1 GND}} {10 -330 {0 GND}} {-20 -180 {0 M_1}} {-20 -10 {0 GND}} {120 30 {0 GND}} {-20 -50 {0 M_2}} {10 -300 {0 VVdd}} {-200 30 {0 V_1}} {120 -30 {0 Vo}} {-80 -180 {0 Vi}} {-230 -50 {1 Vi}} {-200 -10 {0 Vi}} {-20 -90 {0 Vo}} {-200 70 {0 GND}} {10 -260 {0 net_1}} {-80 -50 {0 Vi}} {-20 80 {1 GND}}}
+set NETLIST_CACHE(lab3_l1,wires) {{120 30 120 100 GND} {-20 -140 -20 -110 Vo} {-20 -110 -20 -90 Vo} {120 -110 120 -30 Vo} {-20 -110 120 -110 Vo} {120 -110 210 -110 Vo} {-60 -350 -60 -330 GND} {-60 -330 10 -330 GND} {-20 -260 -20 -220 net_1} {-20 -260 10 -260 net_1} {-160 -180 -80 -180 Vi} {-160 -50 -80 -50 Vi} {-230 -110 -230 -50 Vi} {-160 -180 -160 -110 Vi} {-160 -110 -160 -50 Vi} {-200 70 -200 100 GND} {-200 100 -80 100 GND} {-80 40 -20 40 GND} {-80 40 -80 100 GND} {-20 -10 -20 40 GND} {-20 40 -20 80 GND} {-200 -110 -200 -10 Vi} {-230 -110 -200 -110 Vi} {-200 -110 -160 -110 Vi}}

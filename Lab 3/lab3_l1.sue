@@ -1,0 +1,39 @@
+# SUE version MMI_SUE5.6.29
+
+proc SCHEMATIC_lab3_l1 {} {
+  make global -name GND -origin {-20 80}
+  make global -name GND -origin {120 100}
+  make input -name Vi -origin {-230 -50}
+  make output -name Vo -origin {210 -110}
+  make global -orient RXY -name GND -origin {-60 -350}
+  make capacitor -capacitance 0.3pF -origin {120 0}
+  make dc_supply -orient RXY -name Vdd -voltage 2.5V -origin {10 -300}
+  make pmos -W 1.5 -origin {-20 -180}
+  make nmos -W 0.5 -origin {-20 -50}
+  make pulse -pulse_width 6ns -period 12ns -origin {-200 30}
+  make_wire 120 30 120 100
+  make_wire -20 -110 -20 -140
+  make_wire -20 -110 -20 -90
+  make_wire 120 -110 120 -30
+  make_wire 120 -110 -20 -110
+  make_wire 120 -110 210 -110
+  make_wire -60 -350 -60 -330
+  make_wire -60 -330 10 -330
+  make_wire -20 -220 -20 -260
+  make_wire -20 -260 10 -260
+  make_wire -80 -180 -160 -180
+  make_wire -160 -50 -80 -50
+  make_wire -230 -50 -230 -110
+  make_wire -160 -180 -160 -110
+  make_wire -160 -110 -160 -50
+  make_wire -200 70 -200 100
+  make_wire -200 100 -80 100
+  make_wire -20 40 -80 40
+  make_wire -80 40 -80 100
+  make_wire -20 40 -20 -10
+  make_wire -20 40 -20 80
+  make_wire -200 -10 -200 -110
+  make_wire -200 -110 -230 -110
+  make_wire -200 -110 -160 -110
+}
+

@@ -1,0 +1,84 @@
+
+Circuit: * file: lab3_l1.sp
+
+Doing analysis at TEMP = 105.000000 and TNOM = 27.000000
+
+No. of Data Columns : 8  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        2.5
+vo                                         2.5
+net_1                                      2.5
+vi                                           0
+v_1#branch                                   0
+vvdd#branch                       -5.86351e-10
+vdd#branch                        -1.07271e-16
+
+
+No. of Data Rows : 1623
+Options:
+
++ acct
+  brief
+  history	10000
++ lvltim	2
+  noglob
++ opts
++ post
++ post_version	9007
+  program	ngspice
+  prompt	ngspice ! -> 
+  rawfile	lab3_l1.raw
+  sourcepath	( . /usr/local/share/ngspice/scripts )
++ temp	105
+
+Total CPU time: 0.020 seconds.
+CPU time since last call: 0.020 seconds.
+Total DRAM available = 31836.910156 MB.
+DRAM currently available = 9872.031250 MB.
+Total ngspice program size = 4.115234 MB.
+Resident set size = 1.786133 MB.
+Shared ngspice pages = 1.587891 MB.
+Text (code) pages = 1.222656 MB.
+Stack = 0 bytes.
+Library pages = 382.000 kB.
+0 page faults, 14 vol + 1 invol = 15 context switches.
+
+Number of lines in the deck = 13
+Netlist loading time = 0.000102
+Netlist parsing time = 0.000144
+
+Nominal temperature = 27
+Operating temperature = 105
+Total iterations = 3258
+Transient iterations = 3250
+Circuit Equations = 8
+Circuit original non-zeroes = 22
+Circuit fill-in non-zeroes = 0
+Circuit total non-zeroes = 22
+Transient timepoints = 1623
+Accepted timepoints = 1623
+Rejected timepoints = 0
+Total analysis time = 0.006282
+Matrix load time = 0.002317
+Matrix synchronize time = 0
+Matrix reorder time = 6E-06
+Matrix factor time = 0.00041
+Matrix solve time = 0.000428
+Transient analysis time = 0.005867
+Transient load time = 0.002298
+Transient sync time = 0
+Transient factor time = 0.000408
+Transient solve time = 0.000424
+Transient trunc time = 0.000368
+Transient iters per point = 0
+AC analysis time = 0
+AC load time = 0
+AC sync time = 0
+AC factor time = 0
+AC solve time = 0
+

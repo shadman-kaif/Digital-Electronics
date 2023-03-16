@@ -1,0 +1,92 @@
+
+Circuit: * file: lab3_l2.sp
+
+Doing analysis at TEMP = 105.000000 and TNOM = 27.000000
+
+No. of Data Columns : 16  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        2.5
+net_3                                      2.5
+y                                          2.5
+net_4                                      2.5
+b                                          2.5
+c                                            0
+a                                            0
+net_1                                  2.12125
+uc_net_2                                     0
+v_4#branch                                   0
+v_3#branch                                   0
+v_2#branch                                   0
+v_1#branch                                   0
+vvdd#branch                       -1.42271e-08
+vdd#branch                        -1.50631e-14
+
+
+No. of Data Rows : 1650
+Options:
+
++ acct
+  brief
+  history	10000
++ lvltim	2
+  noglob
++ opts
++ post
++ post_version	9007
+  program	ngspice
+  prompt	ngspice ! -> 
+  rawfile	lab3_l2.raw
+  sourcepath	( . /usr/local/share/ngspice/scripts )
++ temp	105
+
+Total CPU time: 0.022 seconds.
+CPU time since last call: 0.022 seconds.
+Total DRAM available = 31836.910156 MB.
+DRAM currently available = 10528.851562 MB.
+Total ngspice program size = 4.116211 MB.
+Resident set size = 1.760742 MB.
+Shared ngspice pages = 1.560547 MB.
+Text (code) pages = 1.222656 MB.
+Stack = 0 bytes.
+Library pages = 383.000 kB.
+0 page faults, 17 vol + 2 invol = 19 context switches.
+
+Number of lines in the deck = 20
+Netlist loading time = 5E-05
+Netlist parsing time = 7.6E-05
+
+Nominal temperature = 27
+Operating temperature = 105
+Total iterations = 3333
+Transient iterations = 3312
+Circuit Equations = 16
+Circuit original non-zeroes = 56
+Circuit fill-in non-zeroes = 0
+Circuit total non-zeroes = 56
+Transient timepoints = 1650
+Accepted timepoints = 1650
+Rejected timepoints = 0
+Total analysis time = 0.011249
+Matrix load time = 0.006359
+Matrix synchronize time = 0
+Matrix reorder time = 3E-06
+Matrix factor time = 0.000606
+Matrix solve time = 0.000583
+Transient analysis time = 0.011037
+Transient load time = 0.006331
+Transient sync time = 0
+Transient factor time = 0.000603
+Transient solve time = 0.00058
+Transient trunc time = 0.000598
+Transient iters per point = 0
+AC analysis time = 0
+AC load time = 0
+AC sync time = 0
+AC factor time = 0
+AC solve time = 0
+

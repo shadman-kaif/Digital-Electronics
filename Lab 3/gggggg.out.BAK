@@ -1,0 +1,137 @@
+
+Circuit: * file: gggggg.sp
+
+Doing analysis at TEMP = 105.000000 and TNOM = 27.000000
+
+No. of Data Columns : 26  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        2.5
+q                                  3.75268e-07
+net_6                                        0
+xnor2.net_1                           0.448268
+net_8                                  2.49999
+net_12                                 2.49999
+net_3                              4.48095e-07
+xnor2_1.net_1                          2.49999
+net_1                                        0
+net_10                             4.18962e-07
+xnor2_2.net_1                         0.448267
+net_4                                      2.5
+net_2                                        0
+net_13                                     2.5
+net_5                              3.82739e-07
+net_11                             3.82739e-07
+net_9                                        0
+q_b                                    2.49999
+xnor2_3.net_1                              2.5
+net_7                                      2.5
+v_4#branch                         2.99383e-11
+v_3#branch                                   0
+v_2#branch                                   0
+v_1#branch                                   0
+vdd#branch                        -3.46671e-08
+
+
+No. of Data Rows : 25257
+No. of Data Columns : 26  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        2.5
+q                                  3.75268e-07
+net_6                                        0
+xnor2.net_1                           0.448268
+net_8                                  2.49999
+net_12                                 2.49999
+net_3                              4.48095e-07
+xnor2_1.net_1                          2.49999
+net_1                                        0
+net_10                             4.18962e-07
+xnor2_2.net_1                         0.448267
+net_4                                      2.5
+net_2                                        0
+net_13                                     2.5
+net_5                              3.82739e-07
+net_11                             3.82739e-07
+net_9                                        0
+q_b                                    2.49999
+xnor2_3.net_1                              2.5
+net_7                                      2.5
+v_4#branch                         2.99383e-11
+v_3#branch                                   0
+v_2#branch                                   0
+v_1#branch                                   0
+vdd#branch                        -3.46671e-08
+
+
+No. of Data Rows : 1623
+Options:
+
++ acct
+  brief
+  history	10000
++ lvltim	2
+  noglob
++ opts
++ post
++ post_version	9007
+  program	ngspice
+  prompt	ngspice ! -> 
+  rawfile	gggggg.raw
+  sourcepath	( . /usr/local/share/ngspice/scripts )
++ temp	105
+
+Total CPU time: 0.937 seconds.
+CPU time since last call: 0.937 seconds.
+Total DRAM available = 31836.910156 MB.
+DRAM currently available = 9326.558594 MB.
+Total ngspice program size = 4.117188 MB.
+Resident set size = 1.773438 MB.
+Shared ngspice pages = 1.576172 MB.
+Text (code) pages = 1.222656 MB.
+Stack = 0 bytes.
+Library pages = 384.000 kB.
+0 page faults, 138 vol + 20 invol = 158 context switches.
+
+Number of lines in the deck = 87
+Netlist loading time = 7.9E-05
+Netlist parsing time = 0.000322
+
+Nominal temperature = 27
+Operating temperature = 105
+Total iterations = 54938
+Transient iterations = 54860
+Circuit Equations = 26
+Circuit original non-zeroes = 158
+Circuit fill-in non-zeroes = 0
+Circuit total non-zeroes = 158
+Transient timepoints = 26880
+Accepted timepoints = 26880
+Rejected timepoints = 0
+Total analysis time = 0.87139
+Matrix load time = 0.702087
+Matrix synchronize time = 0
+Matrix reorder time = 7.2E-05
+Matrix factor time = 0.024431
+Matrix solve time = 0.017828
+Transient analysis time = 0.868783
+Transient load time = 0.700475
+Transient sync time = 0
+Transient factor time = 0.024346
+Transient solve time = 0.017772
+Transient trunc time = 0.044924
+Transient iters per point = 0
+AC analysis time = 0
+AC load time = 0
+AC sync time = 0
+AC factor time = 0
+AC solve time = 0
+
