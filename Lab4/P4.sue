@@ -1,0 +1,113 @@
+# SUE version MMI_SUE5.6.29
+
+proc SCHEMATIC_P4 {} {
+  make inverter -origin {500 -40}
+  make global -name gnd -origin {310 610}
+  make global -name gnd -origin {580 610}
+  make global -name gnd -origin {420 310}
+  make global -name gnd -origin {680 310}
+  make global -name gnd -origin {100 20}
+  make global -name gnd -origin {990 20}
+  make global -name gnd -origin {-200 560}
+  make global -name gnd -origin {1060 560}
+  make inverter -orient RXY -origin {420 990}
+  make capacitor -capacitance 1pF -origin {-200 500}
+  make capacitor -capacitance 1pF -origin {1060 510}
+  make nmos -orient RXY -W 8 -origin {20 770}
+  make nmos -W 8 -origin {910 770}
+  make nmos -W 8 -origin {910 990}
+  make nmos -orient RXY -W 8 -origin {20 990}
+  make global -name gnd -origin {-400 -40}
+  make global -name gnd -origin {270 110}
+  make global -name gnd -origin {790 1400}
+  make global -name gnd -origin {20 1050}
+  make global -name gnd -origin {910 1050}
+  make dc_supply -orient RXY -voltage 2.5V -origin {20 60}
+  make dc_supply -orient R270 -voltage 2.5V -origin {360 290}
+  make dc_supply -orient R270 -voltage 2.5V -origin {620 290}
+  make dc_supply -orient RXY -voltage 2.5V -origin {910 60}
+  make dc_supply -voltage 2.5V -origin {790 1290}
+  make pmos -orient RXY -W 8 -origin {20 210}
+  make pmos -W 8 -origin {910 210}
+  make pulse -name precharge -pulse_voltage 2.5V -rise_time 50ps -fall_time 50ps -pulse_width 8ns -period 19ns -origin {270 10}
+  make nmos -orient R90 -W 0.6 -origin {180 460}
+  make nmos -orient R90 -W 0.6 -origin {760 470}
+  make pmos -W 4 -origin {580 390}
+  make pmos -orient RXY -W 4 -origin {310 390}
+  make nmos -W 1.62 -origin {580 530}
+  make nmos -orient RXY -W 1.62 -origin {310 530}
+  make pulse -name write -pulse_voltage 2.5V -delay_time 10ns -rise_time 50ps -fall_time 50ps -pulse_width 9ns -period 100ns -origin {-370 1290}
+  make pulse -name word -pulse_voltage 2.5V -delay_time 10ns -rise_time 50ps -fall_time 50ps -pulse_width 20ns -period 100ns -origin {-400 -140}
+  make global -name gnd -origin {-370 1390}
+  make_wire 520 390 500 390
+  make_wire 500 530 520 530
+  make_wire 370 390 400 390
+  make_wire 400 530 370 530
+  make_wire 310 570 310 610
+  make_wire 580 570 580 610
+  make_wire 20 170 20 100
+  make_wire 310 290 320 290
+  make_wire 310 290 310 350
+  make_wire 580 290 580 350
+  make_wire 420 290 420 310
+  make_wire 390 290 420 290
+  make_wire 680 290 680 310
+  make_wire 650 290 680 290
+  make_wire 20 20 100 20
+  make_wire 20 20 20 30
+  make_wire 910 20 990 20
+  make_wire 910 20 910 30
+  make_wire 910 100 910 170
+  make_wire 220 460 310 460
+  make_wire 310 430 310 460
+  make_wire 310 460 310 490
+  make_wire 720 470 580 470
+  make_wire 580 470 580 430
+  make_wire 580 470 580 490
+  make_wire 310 460 500 460
+  make_wire 500 460 500 390
+  make_wire 500 460 500 530
+  make_wire 580 470 400 470
+  make_wire 400 470 400 390
+  make_wire 400 470 400 530
+  make_wire 1060 470 1060 480
+  make_wire -200 530 -200 560
+  make_wire 1060 540 1060 560
+  make_wire 20 810 20 950
+  make_wire 910 810 910 950
+  make_wire 180 -180 180 400
+  make_wire 760 -180 760 410
+  make_wire -400 -100 -400 -40
+  make_wire -400 -180 180 -180
+  make_wire 180 -180 760 -180
+  make_wire 80 210 600 210
+  make_wire 600 210 850 210
+  make_wire 550 -40 600 -40
+  make_wire 600 -40 600 210
+  make_wire 270 50 270 110
+  make_wire 270 -30 270 -40
+  make_wire 270 -40 470 -40
+  make_wire 320 770 80 770
+  make_wire -370 1250 320 1250
+  make_wire 320 770 320 1250
+  make_wire 20 1030 20 1050
+  make_wire 910 1030 910 1050
+  make_wire 320 770 850 770
+  make_wire 790 1320 790 1400
+  make_wire 790 990 450 990
+  make_wire 790 990 850 990
+  make_wire 790 990 790 1250
+  make_wire 80 990 370 990
+  make_wire 20 250 20 460
+  make_wire -200 460 -200 470
+  make_wire -200 460 20 460
+  make_wire 20 460 140 460
+  make_wire 20 460 20 730
+  make_wire 910 470 800 470
+  make_wire 910 470 1060 470
+  make_wire 910 470 910 250
+  make_wire 910 470 910 730
+  make_wire -370 1330 -370 1390
+  make_text -origin {1600 -60} -text {^.tran 10p 100n}
+}
+
